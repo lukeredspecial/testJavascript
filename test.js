@@ -5,14 +5,28 @@ var cookie2 ='cookie2=yet another test; expires=Sat, 5 May 2018 23:47:11 UTC; pa
 
 //console.log(cookieString);
 //document.onerror(alert("Error"));
-document.cookie = cookieString;
+//document.cookie = cookieString;
 
 function button1Click()
 {
 
-    alert(document.cookie);
+    var emailObj = document.getElementById("EmailValue");
 
+    var validationResult = emailObj.checkValidity();
+    //alert(validationResult);
+    console.log(emailObj.validationMessage);
 
+    if(!emailObj.checkValidity())
+    {
+        document.getElementById("tit1").innerHTML = emailObj.validationMessage;
+    }
+    else
+    {
+        document.getElementById("tit1").innerHTML = "";
+    }
+    //alert(document.cookie);
+
+    /*
     var i = 0;
     for(i=0;i<10;i++)
     {
@@ -36,7 +50,7 @@ function button1Click()
     var parsed = JSON.parse(persona.json());
 
     alert(parsed.nome);
-
+    */
     //console.log(cookieString);
     //console.log("test 3");
 
