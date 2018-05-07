@@ -56,3 +56,19 @@ function button1Click()
 
 }
 
+function button2Click()
+{
+    //console.log(document.getElementsByTagName("p"));
+
+    var elementP = document.getElementsByTagName("p");
+    var element;
+    console.log(document.URL);
+    var i = 0;
+    for(i = 0; i< elementP.length; i++)
+    {
+        console.log(elementP[i].innerHTML);
+    }
+
+
+    //alert();
+}
