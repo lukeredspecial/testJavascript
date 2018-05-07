@@ -7,6 +7,62 @@ var cookie2 ='cookie2=yet another test; expires=Sat, 5 May 2018 23:47:11 UTC; pa
 //document.onerror(alert("Error"));
 //document.cookie = cookieString;
 
+function button3Click()
+{
+    //alert("1" - - "1");
+
+    var myArr = ['foo', 'bar', 'baz'];
+    myArr[2];
+    var foo = "bar";
+
+    var data = ["A", "B", "C", "D"];
+    data.unshift("X");
+    data.push("Y");
+    data.concat("foo")
+
+    //var x = parseInt("20 bar 30");
+
+    
+    var x = 1;
+    console.log(x++ + ++x + x);
+
+    var x1 = x++;
+    console.log(x1);
+    var x2 = ++x;
+    console.log(x2);
+
+    console.log(~-(2 + "2"));
+    
+    
+    //alert(x1 + "  " + x2);
+    //alert(Math.max());
+    //alert(Math.min() < Math.max());
+    
+    //console.log('2' in myArr);
+
+
+    var bar = 1,
+        foo={};
+
+        foo:{
+            bar:2;
+            baz: ++bar;
+        };
+        //alert(foo.baz + foo.bar + bar);
+
+        //new Date()
+
+    //console.log(new String("pippo") instanceof String);
+
+    //alert(new Array(5).toString());
+
+    //alert(new String("pippo") instanceof String);
+
+    //console.log(document.getElementsByTagName("p"));
+
+    //alert();
+}
+
 function button1Click()
 {
 
@@ -68,7 +124,7 @@ function button2Click()
     {
         console.log(elementP[i].innerHTML);
     }
-
-
     //alert();
 }
+
+
